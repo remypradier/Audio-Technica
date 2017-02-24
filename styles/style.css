@@ -34,7 +34,7 @@
 
 @font-face {
     font-family: "EuclidFlex-Light";
-    src: url("font/EuclidFlex-Light.woff") format('woff');
+    src: url("../font/EuclidFlex-Light.woff") format('woff');
 }
 
 @font-face {
