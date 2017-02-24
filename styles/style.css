@@ -1,0 +1,83 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+*, *:before, *:after
+{
+	box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after
+{
+	content: " ";
+	display: table;
+}
+
+.clearfix:after
+{
+	clear: both;
+}
+
+/*---------- Polices --------*/
+
+@font-face {
+    font-family: "EuclidFlex-Bold";
+    src: url("../font/EuclidFlex-Bold.woff") format('woff');
+}
+
+@font-face {
+    font-family: "EuclidFlex-BoldItalic";
+    src: url("../font/EuclidFlex-BoldItalic-Thin.woff") format('woff');
+}
+
+@font-face {
+    font-family: "EuclidFlex-Light";
+    src: url("../font/EuclidFlex-Light.woff") format('woff');
+}
+
+@font-face {
+    font-family: "EuclidFlex-LightItalic";
+    src: url("../font/EuclidFlex-LightItalic.woff") format('woff');
+}
+
+@font-face {
+    font-family: "EuclidFlex-Medium";
+    src: url("../font/EuclidFlex-Medium.woff") format('woff');
+}
+
+@font-face {
+    font-family: "EuclidFlex-MediumItalic";
+    src: url("../font/EuclidFlex-MediumItalic.woff") format('woff');
+}
+
+@font-face {
+    font-family: "EuclidFlex-Regular";
+    src: url("../font/EuclidFlex-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "EuclidFlex-RegularItalic";
+    src: url("../font/EuclidFlex-RegularItalic.woff") format('woff');
+}
+
+@font-face {
+    font-family: "EuclidFlex-Ultralight";
+    src: url("../font/EuclidFlex-Ultralight.woff") format('woff');
+}
+
+@font-face {
+    font-family: "EuclidFlex-UltralightItalic";
+    src: url("../font/EuclidFlex-UltralightItalic.woff") format('woff');
+}
+
+@font-face {
+    font-family: "ZefaniStencil-Uppercase-Regular";
+    src: url("../font/ZefaniStencil-Uppercase-Regular.woff") format('woff');
+}
+
+/*---------- Header ---------*/
+/*---------- Body   ---------*/
+/*---------- Footer ---------*/
+/*---------- Breakpoint -----*/
