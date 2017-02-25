@@ -84,12 +84,6 @@
 
 /*---------- BODY -----------*/
 
-body
-{
-	max-width: 1700px;
-	margin: 0 auto;
-}
-
 a
 {
 	text-decoration: none;
@@ -100,6 +94,8 @@ a
 header
 {
 	padding: 2% 0;
+	width: 85%;
+	margin: 0 auto;
 }
 
 .logo
@@ -124,7 +120,7 @@ header
 	text-transform: uppercase;
 	font-family: "EuclidFlex-Light";
 	text-align: center;
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 .settings
@@ -171,7 +167,13 @@ header
 
 main
 {
-	padding: 5%;
+	padding: 5% 0;
+}
+
+.first_product
+{
+	width: 85%;
+	margin: 0 auto;
 }
 
 .img_product
@@ -215,5 +217,115 @@ main
 	width: 53%;
 	margin: 11% 0 0 -3%;
 }
+
+.title_iconic_product
+{
+	text-transform: uppercase;
+	color: #797979;
+	font-size: 1.8em;
+	font-family: "EuclidFlex-Bold";
+	font-weight: bold;
+	clear: both;
+	text-align: center;
+
+}
+
+.selector
+{
+	background: #F6F6F6;
+	margin: 5% 0;
+}
+
+.product h2, .product h4, .product p
+{
+	text-align: center;
+	color: #fff;
+}
+
+.product h2
+{
+	font-family: "EuclidFlex-Medium";
+	font-weight: 500;
+	font-size: 3.3em;
+	margin: 10% 0 0 0;
+	text-transform: uppercase;
+}
+
+.product h4
+{
+	font-family:;	
+}
+
+.product p
+{
+	font-family: "EuclidFlex-Light";
+	font-size: 2.8em;
+	margin: 5% 0 0 0;
+}
+
+.product a
+{
+	font-family: "EuclidFlex-Light";
+	color: #c4b798;
+	font-size: 2em;
+	margin: 5% auto 15% auto;
+	display: block;
+	text-align: center;
+	border: 2px solid;
+	width: 60%;
+	padding: 2% 0;
+	text-transform: uppercase;
+}
+
+.product
+{
+	width: 25%;
+	float: left;
+	opacity: 0.25;
+}
+
+.product_active
+{
+	opacity: 1;
+	background: #D7CFBD;
+}
+.product1
+{
+	margin: 0 0 0 12.5%;
+}
+
+.product2 a
+{
+	border-radius: 35px 5px 35px;
+}
+
+.product1 a, .product3 a
+{
+	border-radius: 35px;
+}
+
+
+.product3
+{
+	margin: 0 12.5% 0 0;
+}
+
+.product img
+{
+	margin: 10% auto 0 auto;
+	display: block;
+}
+
+.product1 img, .product3 img
+{
+	width: 60%;
+}
+
+.product2 img
+{
+	width: 40%;
+}
+
+
 /*---------- Footer ---------*/
 /*---------- Breakpoint -----*/
