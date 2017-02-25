@@ -227,13 +227,35 @@ main
 	font-weight: bold;
 	clear: both;
 	text-align: center;
-
 }
 
 .selector
 {
 	background: #F6F6F6;
 	margin: 5% 0;
+	position: relative;
+}
+
+.selector button
+{
+	width: 5%;
+	box-shadow: 3px 4px 6px 0;
+	position: absolute;
+	padding: 2%;
+	background: #fff;
+	border: none;
+}
+
+.button_left
+{
+	top: 45%;
+	left: 5%;
+}
+
+.button_right
+{
+	top: 45%;
+	right: 5%;
 }
 
 .product h2, .product h4, .product p
@@ -326,6 +348,84 @@ main
 	width: 40%;
 }
 
+.see_more
+{
+	font-family: "EuclidFlex-Light";
+	background-color: #8fbbdd;
+	box-shadow: -3px 5px 4px 0;
+	width: 25%;
+	position: absolute;
+	font-size: 2.1em;
+	color: #fff;
+	padding: 1% 0 1% 2%;
+	top: 95%;
+	right: 5%;
+}
+
+.title_guide
+{
+	text-transform: uppercase;
+	color: #797979;
+	font-size: 1.8em;
+	font-family: "EuclidFlex-Bold";
+	font-weight: bold;
+	clear: both;
+	text-align: center;
+}
+
+.grid
+{
+	width: 50%;
+	margin: 5% auto;
+}
+
+.grid_guide
+{
+	float: left;
+	width: 33%;
+	border: solid 1px #979797;
+}
+
+.grid_guide:hover
+{
+	background: #8FBADD;
+}
+
+.grid_guide:hover .guide_img_white
+{
+	display: block;
+}
+
+.grid_guide:hover .guide_img
+{
+	display: none;
+}
+
+.grid_guide h4
+{
+	font-family: "EuclidFlex-Bold";
+	font-size: 1.6em;
+	text-align: center;
+	margin: 15% 0 7% 0;
+	text-transform: uppercase;
+	color: #393939;
+}
+
+.grid_guide img
+{
+	width: 30%;
+	margin: 10% auto;
+}
+
+.guide_img
+{
+	display: block;
+}
+
+.guide_img_white
+{
+	display: none;
+}
 
 /*---------- Footer ---------*/
 /*---------- Breakpoint -----*/
