@@ -275,7 +275,7 @@ main
 
 .product h4
 {
-	font-family:;	
+
 }
 
 .product p
@@ -413,8 +413,13 @@ main
 
 .grid_guide img
 {
-	width: 30%;
-	margin: 10% auto;
+	height: 6em;
+	margin: 20% auto 20% auto;
+}
+
+.grid a:last-child .grid_guide img
+{
+	margin: 10% auto 20% auto;
 }
 
 .guide_img
@@ -426,6 +431,7 @@ main
 {
 	display: none;
 }
+
 
 /*---------- Footer ---------*/
 /*---------- Breakpoint -----*/
