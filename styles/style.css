@@ -384,12 +384,15 @@ main
 	float: left;
 	width: 33%;
 	border: solid 1px #979797;
+	transition: 0.5s;
 }
 
 .grid_guide:hover
 {
 	background: #8FBADD;
 	transform: scale(1.1, 1.1);
+	box-shadow: -4px 3px 31px 3px rgba(0, 0, 0, 0.2);
+	
 }
 
 .grid_guide:hover .guide_img_white
@@ -450,7 +453,7 @@ main
 	font-size: 2.1em;
 	color: #fff;
 	padding: 1% 0;
-	top: -5%;
+	top: -5.5%;
 	left: 15%;
 	text-align: center;
 	z-index: 2;
@@ -501,6 +504,7 @@ main
 .summary article:hover .transition
 {
 	left: -25%;
+	box-shadow: -4px 3px 31px 3px rgba(0, 0, 0, 0.2);
 }
 
 .a_modifier
@@ -515,7 +519,6 @@ main
 	left: 0;
 	background: #fff;
 	width: 100%;
-	height: 100%;
 	transition: 0.5s;
 }
 
