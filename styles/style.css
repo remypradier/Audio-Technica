@@ -423,7 +423,7 @@ main
 
 .grid a:last-child .grid_guide img
 {
-	margin: 10% auto 20% auto;
+	margin: 10% auto 19.3% auto;
 }
 
 .guide_img
@@ -440,7 +440,7 @@ main
 {
 	background: #F6F6F6;
 	position: relative;
-	margin: 10% 0;
+	margin: 10% 0 0 0;
 }
 
 .the_magazine
@@ -558,4 +558,39 @@ main
 }
 
 /*---------- Footer ---------*/
+
+footer
+{
+	width: 80%;
+	margin: 5% auto;
+}
+
+.contact, .links, .account, .client_service, .social_network
+{
+	width: 20%;
+	float: left;
+}
+
+.contact h4, .links h4, .account h4, .client_service h4, .social_network h4
+{
+	font-family: "EuclidFlex-Bold";
+	font-size: 25px;
+	color: #979797;
+	margin: 0 0 10% 0;
+}
+
+.contact ul li, .links ul li, .account ul li, .client_service ul li, .social_network ul li
+{
+	font-family: "EuclidFlex";
+	font-size: 20px;
+	list-style: none;
+	margin: 0 0 2% 0;
+}
+
+
+.contact ul li a, .links ul li a, .account ul li a, .client_service ul li a, .social_network ul li a
+{
+	color: #979797;
+}
+
 /*---------- Breakpoint -----*/
