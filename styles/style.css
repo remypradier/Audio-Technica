@@ -239,7 +239,7 @@ main
 .selector button
 {
 	width: 5%;
-	box-shadow: 3px 4px 6px 0;
+	box-shadow: 3px 4px 6px 0 rgba(0, 0, 0, 0.22);
 	position: absolute;
 	padding: 2%;
 	background: #fff;
@@ -352,7 +352,7 @@ main
 {
 	font-family: "EuclidFlex-Light";
 	background-color: #8fbbdd;
-	box-shadow: -3px 5px 4px 0;
+	box-shadow: -3px 5px 4px 0 rgba(0, 0, 0, 0.24);
 	width: 25%;
 	position: absolute;
 	font-size: 2.1em;
@@ -389,6 +389,7 @@ main
 .grid_guide:hover
 {
 	background: #8FBADD;
+	transform: scale(1.1, 1.1);
 }
 
 .grid_guide:hover .guide_img_white
@@ -432,6 +433,126 @@ main
 	display: none;
 }
 
+.magazine
+{
+	background: #F6F6F6;
+	position: relative;
+	margin: 10% 0;
+}
+
+.the_magazine
+{
+	font-family: "EuclidFlex-Light";
+	background-color: #8fbbdd;
+	box-shadow: -3px 5px 4px 0 rgba(0, 0, 0, 0.24);
+	width: 20%;
+	position: absolute;
+	font-size: 2.1em;
+	color: #fff;
+	padding: 1% 0;
+	top: -5%;
+	left: 15%;
+	text-align: center;
+	z-index: 2;
+}
+
+.square
+{
+	background: #E9E9E9;
+	width: 30%;
+	position: absolute;
+	display: block;
+	height: 30em;
+}
+
+.title_magazine
+{
+	text-transform: uppercase;
+	color: #c4b798;
+	font-size: 3.1em;
+	font-family: "ZefaniStencil-Uppercase-Regular";
+	float: left;
+	margin: 4% 0 0 14%;
+	z-index: 2;
+	position: relative;
+}
+
+.illustration
+{
+	float: left;
+	margin: 3% 0 0 20%;
+	width: 45%;
+	position: relative;
+}
+
+.summary
+{
+	float: left;
+	width: 25%;
+	margin: 7% 0 0 0;
+}
+
+.summary article
+{
+	position: relative;
+	background: #E9E9E9;
+}
+
+.summary article:hover .transition
+{
+	left: -25%;
+}
+
+.a_modifier
+{
+	padding: 10% 0 10% 85%;
+}
+
+.transition
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	transition: 0.5s;
+}
+
+.transition h4
+{
+	font-size: 1.6em;
+	font-family: "EuclidFlex-Bold";
+	text-transform: uppercase;
+	margin: 5% 0 0 10%;
+}
+
+.transition p
+{
+	font-family: "EuclidFlex-LightItalic";
+	font-size: 1.6em;
+	font-weight: 300;
+	float: left;
+	margin: 0 0 5% 10%;
+}
+
+.rectangle
+{
+	margin: 5% 0 0 0;
+	float: right;
+	width: 40%;
+	background: #c4b798;
+}
+
+.rectangle hr
+{
+	height: 2px;
+	margin: 5% 0 5% 40%;
+	background: #fff;
+	float: left;
+	width: 50%;
+	border: none;
+}
 
 /*---------- Footer ---------*/
 /*---------- Breakpoint -----*/
