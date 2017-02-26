@@ -163,6 +163,19 @@ header
 	margin: 0 0 0 7%;
 }
 
+.button_language
+{
+	border: none;
+	background: none;
+	width: 3%;
+
+}
+
+.button_language img
+{
+	transform: rotate(270deg);
+}
+
 /*---------- MAIN   ---------*/
 
 main
@@ -218,6 +231,31 @@ main
 	margin: 11% 0 0 -3%;
 }
 
+.product_arrow
+{
+	width: 50%;
+	float: left;
+	margin: 0 0 0 10%;
+}
+
+.product_angle
+{
+	width: 1.5%;
+	display: block;
+	margin: 10% auto 0 auto;
+	clear: both;
+}
+
+.product_angle img
+{
+	transform: rotate(270deg);
+}
+
+.iconic_product
+{
+	margin: 5% 0 0 0;
+}
+
 .title_iconic_product
 {
 	text-transform: uppercase;
@@ -241,9 +279,10 @@ main
 	width: 5%;
 	box-shadow: 3px 4px 6px 0 rgba(0, 0, 0, 0.22);
 	position: absolute;
-	padding: 2%;
+	padding: 1.4% 1.8%;
 	background: #fff;
 	border: none;
+	cursor: pointer;
 }
 
 .button_left
@@ -256,6 +295,11 @@ main
 {
 	top: 45%;
 	right: 5%;
+}
+
+.button_right img
+{
+	transform: rotate(180deg);
 }
 
 .product h2, .product h4, .product p
@@ -362,6 +406,12 @@ main
 	right: 5%;
 }
 
+.guide
+{
+	margin: 8% 0 0 0;
+	position: relative;
+}
+
 .title_guide
 {
 	text-transform: uppercase;
@@ -373,10 +423,19 @@ main
 	text-align: center;
 }
 
+.headphone
+{
+	position: absolute;
+	width: 30%;
+	top: 0;
+	right: 0;
+}
+
 .grid
 {
 	width: 50%;
 	margin: 5% auto;
+	position: relative;
 }
 
 .grid_guide
@@ -385,6 +444,7 @@ main
 	width: 33%;
 	border: solid 1px #979797;
 	transition: 0.5s;
+	background: #fff;
 }
 
 .grid_guide:hover
@@ -499,6 +559,7 @@ main
 {
 	position: relative;
 	background: #E9E9E9;
+	box-shadow: inset 0 1px 13px 0 rgba(0, 0, 0, 0.25);
 }
 
 .summary article:hover .transition
@@ -507,9 +568,27 @@ main
 	box-shadow: -4px 3px 31px 3px rgba(0, 0, 0, 0.2);
 }
 
-.a_modifier
+.summary a:last-child .transition
 {
-	padding: 10% 0 10% 85%;
+	height: 100%;
+}
+
+.link_arrow
+{
+	/*padding: 10% 12%;*/
+	box-shadow: inset 0 1px 13px 0 rgba(0, 0, 0, 0.25);
+	background: #E9E9E9;
+	width: 25%;
+	margin: 0 75%;
+
+	padding: 9% 2%;
+}
+
+.link_arrow img
+{
+	width: 20%;
+	margin: 0 auto;
+	display: block;
 }
 
 .transition
@@ -520,6 +599,7 @@ main
 	background: #fff;
 	width: 100%;
 	transition: 0.5s;
+	height: 98%;
 }
 
 .transition h4
@@ -587,10 +667,15 @@ footer
 	margin: 0 0 2% 0;
 }
 
-
 .contact ul li a, .links ul li a, .account ul li a, .client_service ul li a, .social_network ul li a
 {
 	color: #979797;
 }
 
+.network
+{
+	float: left;
+	width: 20%;
+	clear: both;
+}
 /*---------- Breakpoint -----*/
