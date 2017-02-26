@@ -89,6 +89,15 @@ a
 	text-decoration: none;
 	color: #000;
 }
+
+span
+{
+	width: 7%;
+	display: block;
+	margin: 0.5% auto 0 auto;
+	border-bottom: solid 4px #979797;
+}
+
 /*---------- Header ---------*/
 
 header
@@ -168,7 +177,7 @@ header
 	border: none;
 	background: none;
 	width: 3%;
-
+	cursor: pointer;
 }
 
 .button_language img
@@ -242,7 +251,8 @@ main
 {
 	width: 1.5%;
 	display: block;
-	margin: 10% auto 0 auto;
+	margin: 0 auto;
+	padding: 2% 0 0 0;
 	clear: both;
 }
 
@@ -452,7 +462,8 @@ main
 	background: #8FBADD;
 	transform: scale(1.1, 1.1);
 	box-shadow: -4px 3px 31px 3px rgba(0, 0, 0, 0.2);
-	
+	z-index: 2;
+	position: relative;
 }
 
 .grid_guide:hover .guide_img_white
@@ -517,6 +528,7 @@ main
 	left: 15%;
 	text-align: center;
 	z-index: 2;
+	text-transform: uppercase;
 }
 
 .square
