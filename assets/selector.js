@@ -5,11 +5,14 @@ var div = document.getElementsByClassName("product_content");
 var save_product;
 
 products[0].innerHTML = products[3].innerHTML;
-products[4].innerHTML = products[1].innerHTML; 
+products[1].innerHTML = products[4].innerHTML;
+products[5].innerHTML = products[2].innerHTML; 
+
+div[0].classList.remove("opacity");
 
 button_right.addEventListener("click", function()
 {
-	div[2].classList.remove("opacity");
+	div[3].classList.remove("opacity");
 
 	for(var i = 0; i < div.length; i++)
 	{
@@ -19,13 +22,14 @@ button_right.addEventListener("click", function()
 	var couldown = setInterval(function()
 	{	
 	save_product = products[0].innerHTML;
-	products[0].innerHTML = products[4].innerHTML;
+	products[0].innerHTML = products[5].innerHTML;
+	products[5].innerHTML = products[4].innerHTML;
 	products[4].innerHTML = products[3].innerHTML;
 	products[3].innerHTML = products[2].innerHTML;
 	products[2].innerHTML = products[1].innerHTML;
 	products[1].innerHTML = save_product;
 
-	div[2].classList.add("opacity");
+	div[3].classList.add("opacity");
 
 	for(var j = 0; j < div.length; j++)
 	{
@@ -37,7 +41,7 @@ button_right.addEventListener("click", function()
 
 button_left.addEventListener("click", function()
 {
-	div[2].classList.remove("opacity");
+	div[3].classList.remove("opacity");
 
 	for(var i = 0; i < div.length; i++)
 	{
@@ -46,14 +50,16 @@ button_left.addEventListener("click", function()
 
 	var couldown = setInterval(function()
 	{	
-	save_product = products[4].innerHTML;
-	products[4].innerHTML = products[0].innerHTML;
+	save_product = products[5].innerHTML;
+
+	products[5].innerHTML = products[0].innerHTML;
 	products[0].innerHTML = products[1].innerHTML;
 	products[1].innerHTML = products[2].innerHTML;
 	products[2].innerHTML = products[3].innerHTML;
-	products[3].innerHTML = save_product;
+	products[3].innerHTML = products[4].innerHTML;
+	products[4].innerHTML = save_product;
 
-	div[2].classList.add("opacity");
+	div[3].classList.add("opacity");
 
 	for(var j = 0; j < div.length; j++)
 	{
