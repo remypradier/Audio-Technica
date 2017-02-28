@@ -1,38 +1,64 @@
 var button_right = document.querySelector("#button_right");
 var button_left = document.querySelector("#button_left");
 var products = document.getElementsByClassName("product");
-var product_active = 1;
+var div = document.getElementsByClassName("product_content");
+var save_product;
+
+products[0].innerHTML = products[3].innerHTML;
+products[4].innerHTML = products[1].innerHTML; 
 
 button_right.addEventListener("click", function()
 {
-	for(var i = 0; i < products.length; i++)
+	div[2].classList.remove("opacity");
+
+	for(var i = 0; i < div.length; i++)
 	{
-		products[i].classList.remove("product_active");
+		div[i].classList.add("moove_right");
 	}
-	if(product_active < 2)
+
+	var couldown = setInterval(function()
+	{	
+	save_product = products[0].innerHTML;
+	products[0].innerHTML = products[4].innerHTML;
+	products[4].innerHTML = products[3].innerHTML;
+	products[3].innerHTML = products[2].innerHTML;
+	products[2].innerHTML = products[1].innerHTML;
+	products[1].innerHTML = save_product;
+
+	div[2].classList.add("opacity");
+
+	for(var j = 0; j < div.length; j++)
 	{
-		product_active++;
+		div[j].classList.remove("moove_right");
 	}
-	else
-	{
-		product_active = 0;
-	}
-	products[product_active].classList.add("product_active");	
+		clearInterval(couldown);
+	}, 1500);	
 });
 
 button_left.addEventListener("click", function()
 {
-	for(var i = 0; i < products.length; i++)
+	div[2].classList.remove("opacity");
+
+	for(var i = 0; i < div.length; i++)
 	{
-		products[i].classList.remove("product_active");
+		div[i].classList.add("moove_left");
 	}
-	if(product_active > 0)
+
+	var couldown = setInterval(function()
+	{	
+	save_product = products[4].innerHTML;
+	products[4].innerHTML = products[0].innerHTML;
+	products[0].innerHTML = products[1].innerHTML;
+	products[1].innerHTML = products[2].innerHTML;
+	products[2].innerHTML = products[3].innerHTML;
+	products[3].innerHTML = save_product;
+
+	div[2].classList.add("opacity");
+
+	for(var j = 0; j < div.length; j++)
 	{
-		product_active--;
+		div[j].classList.remove("moove_left");
 	}
-	else
-	{
-		product_active = 2;
-	}
-	products[product_active].classList.add("product_active");	
+		clearInterval(couldown);
+	}, 1500);	
 });
