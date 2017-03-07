@@ -103,6 +103,11 @@ span
 	border-bottom: solid 4px #979797;
 }
 
+.active
+{
+	display: block !important;
+}
+
 /*---------- Header ---------*/
 
 header
@@ -137,6 +142,11 @@ header
 	font-size: 1.1em;
 }
 
+.navigation ul li:hover
+{
+	opacity: 0.32;
+}
+
 .settings
 {
 	width: 29%;
@@ -144,10 +154,23 @@ header
 	padding: 1% 0;
 }
 
-.submit, .user
+.search_form
 {
-	width: 5%;
 	float: left;
+	margin: 0 0 0 10%;
+}
+
+.submit
+{
+	width: 12%;
+	float: left;
+}
+
+.user
+{
+	width: 4%;
+	float: left;
+	margin: 1% 0 0 0;
 }
 
 .search
@@ -156,34 +179,64 @@ header
 	border: none;
 	font-size: 1.2em;
 	margin: 0 0 0 5%;
-	width: 30%;
+	width: 63%;
+	color: #c9c9c9;
 }
 
 .cart
 {
 	width: 10%;
 	float: left;
-	margin: 0 0 0 7%;
+	margin: 1% 0 0 7%;
 	font-family: "EuclidFlex-Regular";
+}
+
+.cart p, .cart img
+{
+	float: left;
+	width: 50%;
+}
+
+.cart p
+{
+	margin: -3% 0 0 0;
+	opacity: 0.32;
+	font-size: 1.2em;
 }
 
 .cart img
 {
-	width: 60%;
+	margin: 2% 0 0 0;
 }
 
 .language
 {
 	width: 5%;
-	margin: 0 0 0 7%;
+	margin: 1% 0 0 7%;
+	float: left;
+	position: relative;
+}
+
+.language section
+{
+	position: absolute;
+	width: 100%;
+
+}
+
+.language section img
+{
+	display: none;
 }
 
 .button_language
 {
 	border: none;
 	background: none;
-	width: 3%;
+	width: 2.5%;
 	cursor: pointer;
+	margin: 1.5% 0 0 5%;
+	float: left;
 }
 
 .button_language img
@@ -228,7 +281,7 @@ main
 	font-size: 1.8em;
 	font-family: "EuclidFlex-Light";
 	float: left;
-	margin: -2% 0 0 19%;
+	margin: -1% 0 0 17.5%;
 	font-weight: 300;
 }
 
