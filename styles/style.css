@@ -211,16 +211,17 @@ header
 
 .language
 {
-	width: 5%;
+	width: 12.5%;
 	margin: 1% 0 0 7%;
 	float: left;
 	position: relative;
+	cursor: pointer;
 }
 
 .language section
 {
 	position: absolute;
-	width: 100%;
+	width: 50%;
 
 }
 
@@ -233,9 +234,9 @@ header
 {
 	border: none;
 	background: none;
-	width: 2.5%;
+	width: 25%;
 	cursor: pointer;
-	margin: 1.5% 0 0 5%;
+	margin: 10% 0 0 70%;
 	float: left;
 }
 
@@ -823,6 +824,39 @@ footer hr
 	width: 83%;
 	margin: 0 auto;
 	display: block;
+	font-size: 1.5em;
+}
+
+.products_search
+{
+	width: 78%;
+	margin: 2% auto 3% auto;
+}
+
+.products_search button
+{
+	background: none;
+	border: none;
+	cursor: pointer;
+	margin: 0 5% 0 0;
+	width: 15%;
+}
+
+.products_search button p
+{
+	float: left;
+	text-transform: uppercase;
+	font-family: "EuclidFlex-LightItalic";
+	font-size: 1.5em;
+	font-weight: 300;
+}
+
+.products_search button img
+{
+	transform: rotate(270deg);
+	float: left;
+	width: 5%;
+	margin: 2% 0 0 10%;
 }
 
 .products_headphone
@@ -842,7 +876,37 @@ footer hr
 	border: solid 0.3px #979797;
 }
 
-.product_headphone:nth-child(3n+3)
+.product_headphone:hover
+{
+	box-shadow: 0 0 32px 1px rgba(0, 0, 0, 0.09);
+	border: none;
+}
+
+.product_headphone:hover h2
+{
+	font-size: 3em;
+}
+
+.product_headphone:hover h4
+{
+	font-size: 0.9em;
+}
+.product_headphone:hover img
+{
+	margin: 7% auto auto auto;
+	width: 76%;
+}
+
+.product_headphone:hover .price
+{
+	margin: 7% auto auto auto;
+}
+
+.product_headphone:hover a
+{
+	display: block;
+}
+.product_headphone:nth-child(3n+2)
 {
 	margin: 2% 5%;
 }
@@ -891,7 +955,7 @@ footer hr
 {
 	border-collapse: collapse;
 	width: 100%;
-	margin: 10% auto 0 auto;
+	margin: 10% auto 10% auto;
 }
 
 .product_headphone td
@@ -933,9 +997,10 @@ footer hr
 	color: #fff;
 	text-transform: uppercase;
 	display: block;
-	padding: 6% 0;
-	margin: 10% 0 5% 0;
+	padding: 7% 0;
 	font-family: "EuclidFlex-Light";
+	font-size: 1.25em;
+	display: none;
 }
 
 .pagination
