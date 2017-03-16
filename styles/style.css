@@ -825,6 +825,7 @@ footer hr
 	margin: 0 auto;
 	display: block;
 	font-size: 1.5em;
+	font-weight: 300;
 }
 
 .products_search
@@ -873,9 +874,10 @@ footer hr
 	text-align: center;
 	margin: 2% 0;
 	border-radius: 13px;
-	border: solid 0.3px #979797;
+	border: 0.3px solid #979797;
 }
 
+/*hover*/
 .product_headphone:hover
 {
 	box-shadow: 0 0 32px 1px rgba(0, 0, 0, 0.09);
@@ -894,10 +896,11 @@ footer hr
 .product_headphone:hover img
 {
 	margin: 7% auto auto auto;
-	width: 76%;
+	width: 74%;
 }
 
-.product_headphone:hover .price
+.product_headphone:hover .price .price
+
 {
 	margin: 7% auto auto auto;
 }
@@ -906,6 +909,14 @@ footer hr
 {
 	display: block;
 }
+
+/*fin hover*/
+
+.product_headphone:nth-child(3n+1)
+{
+	clear: both;
+}
+
 .product_headphone:nth-child(3n+2)
 {
 	margin: 2% 5%;
@@ -1007,6 +1018,7 @@ footer hr
 {
 	width: 20%;
 	margin: 3% auto 0 auto;
+	clear: both;
 }
 
 .pagination button
